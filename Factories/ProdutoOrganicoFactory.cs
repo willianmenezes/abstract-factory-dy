@@ -7,24 +7,14 @@ namespace AbstractFactory.Factories
 {
     public class ProdutoOrganicoFactory : ProdutoFactory
     {
-        public override List<Alimento> BuscarAlimentos()
+        public override Alimento CriarAlimento()
         {
-            return new List<Alimento>()
-            {
-                new AlimentoOrganico("Alimento organico 01"),
-                new AlimentoOrganico("Alimento organico 02"),
-                new AlimentoOrganico("Alimento organico 03"),
-            };
+            return new AlimentoOrganico();
         }
 
-        public override List<Embalagem> BuscarEmbalagens()
+        public override Embalagem CriarEmbalagem()
         {
-            return new List<Embalagem>()
-            {
-                new EmbalagemOrganica("Embalagem organica 01"),
-                new EmbalagemOrganica("Embalagem organica 02"),
-                new EmbalagemOrganica("Embalagem organica 03"),
-            };
+            return new EmbalagemOrganica();
         }
     }
 }

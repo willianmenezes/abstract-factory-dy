@@ -1,16 +1,18 @@
 ﻿using AbstractFactory.Domain.ValueObj;
+using System.Collections.Generic;
 
 namespace AbstractFactory.Domain.Entities.Base
 {
     public abstract class Alimento
     {
-        protected Alimento(string nome, TipoProduto tipo)
+        protected Alimento(TipoProduto tipo)
         {
-            Nome = nome;
             Tipo = tipo;
         }
 
         public string Nome { get; set; }
         public TipoProduto Tipo { get; set; }
+
+        public abstract List<Alimento> BuscarAlimentos();
     }
 }

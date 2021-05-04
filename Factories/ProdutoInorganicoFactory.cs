@@ -1,5 +1,6 @@
 ﻿using AbstractFactory.Domain.Entities;
 using AbstractFactory.Domain.Entities.Base;
+using AbstractFactory.Domain.ValueObj;
 using AbstractFactory.Factories.AbstractFactories;
 using System.Collections.Generic;
 
@@ -7,24 +8,14 @@ namespace AbstractFactory.Factories
 {
     public class ProdutoInorganicoFactory : ProdutoFactory
     {
-        public override List<Alimento> BuscarAlimentos()
+        public override Alimento CriarAlimento()
         {
-            return new List<Alimento>()
-            {
-                new AlimentoInorganico("Alimento inorganico 01"),
-                new AlimentoInorganico("Alimento inorganico 02"),
-                new AlimentoInorganico("Alimento inorganico 03"),
-            };
+            return new AlimentoInorganico();
         }
 
-        public override List<Embalagem> BuscarEmbalagens()
+        public override Embalagem CriarEmbalagem()
         {
-            return new List<Embalagem>()
-            {
-                new EmbalagemInorganica("Embalagem inorganica 01"),
-                new EmbalagemInorganica("Embalagem inorganica 02"),
-                new EmbalagemInorganica("Embalagem inorganica 03"),
-            };
+            return new EmbalagemInorganica();
         }
     }
 }
