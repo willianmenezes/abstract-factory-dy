@@ -10,7 +10,12 @@ namespace AbstractFactory.Domain.Entities
 
         public override List<Alimento> BuscarAlimentos()
         {
-            throw new System.NotImplementedException();
+            return new List<Alimento>()
+            {
+                new AlimentoOrganico() { Nome = "Alimento organico 01" },
+                new AlimentoOrganico() { Nome = "Alimento organico 02" },
+                new AlimentoOrganico() { Nome = "Alimento organico 03" },
+            };
         }
     }
 }

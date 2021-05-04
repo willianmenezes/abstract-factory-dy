@@ -10,7 +10,12 @@ namespace AbstractFactory.Domain.Entities
 
         public override List<Embalagem> BuscarEmbalagens()
         {
-            throw new System.NotImplementedException();
+            return new List<Embalagem>()
+            {
+                new EmbalagemInorganica(){ Nome = "Embalagem inorganica 01" },
+                new EmbalagemInorganica(){ Nome = "Embalagem inorganica 02" },
+                new EmbalagemInorganica(){ Nome = "Embalagem inorganica 03" },
+            };
         }
     }
 }
