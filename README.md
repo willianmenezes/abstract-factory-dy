@@ -5,4 +5,4 @@ Projeto criado para implementar o padrão de projeto "Abstract Factory". Tentand
 
 Para executar o projeto é necessário ter instalado na máquina de vocês o SDK do .NET 5, que pode ser encontrado [aqui](https://dotnet.microsoft.com/download)
 
-Ter instaldo o Visual Studio Community, que pode ser encontrado [aqui](https://visualstudio.microsoft.com/pt-br/downloads/)
+Ter instalado o Visual Studio Community, que pode ser encontrado [aqui](https://visualstudio.microsoft.com/pt-br/downloads/)
